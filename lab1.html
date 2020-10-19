@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab1.css">
+    <title>Like</title>
+</head>
+    
+<body>
+    <script src="lab1.js"></script>
+    <div class="flex-container">
+        <div class="container">
+            <span class="data">Breznitskiy Mykola</span>
+            <span class="data"> ІПЗ-31 </span>
+            <span class="data"> Variant 1</span>
+        </div>
+        <button class="btn" onclick="openModalWindow('task-1', 'img1', 'close1', 'solution1'); task_1()">1 Task</button>
+        <button class="btn" onclick="openModalWindow('task-2', 'img2', 'close2', 'solution2'); task_1()">2 Task</button>
+        <button class="btn" onclick="openModalWindow('task-3', 'img3', 'close3', 'solution3'); task_3()">3 Task</button>
+        <button class="btn" onclick="openModalWindow('task-4', 'img4', 'close4', 'solution4'); task_4()">4 Task</button>
+        <button class="btn" onclick="openModalWindow('task-5', 'img5', 'close5', 'solution5'); task_5()">5 Task</button>
+        <button class="btn" onclick="openModalWindow('task-6', 'img6', 'close6', 'solution6'); task_6()">6 Task</button>
+    </div>
+    <div class="task-1">
+        <div class="flex margin"><img class="img1" src="assets/task1.png" alt=""></div>
+        <span class="solution solution1" data-binding="taskSolution_1"></span>
+        <button class="close1 closeBtn"
+            onclick="closeModalWindow('task-1', 'img1', 'close1', 'solution1');">Close</button>
+    </div>
+    <div class="task-2">
+        <div class="flex margin"><img class="img2" src="assets/task2.png" alt=""></div>
+        <span class="solution solution2" data-binding="taskSolution_2"></span>
+        <button class="close2 closeBtn"
+            onclick="closeModalWindow('task-2', 'img2', 'close2', 'solution2')">Close</button>
+    </div>
+    <div class="task-3">
+        <div class="flex margin"><img class="img3" src="assets/task3.png" alt=""></div>
+        <span class="solution solution3" data-binding="taskSolution_3"></span>
+        <button class="close3 closeBtn"
+            onclick="closeModalWindow('task-3', 'img3', 'close3', 'solution3')">Close</button>
+    </div>
+    <div class="task-4">
+        <div class="flex margin"><img class="img4" src="assets/task4.png" alt=""></div>
+        <span class="solution solution4" data-binding="taskSolution_4"></span>
+        <button class="close4 closeBtn"
+            onclick="closeModalWindow('task-4', 'img4', 'close4', 'solution4')">Close</button>
+    </div>
+    <div class="task-5">
+        <div class="flex margin"><img class="img5" src="assets/task5.png" alt=""></div>
+        <span class="solution solution5" data-binding="taskSolution_5"></span>
+        <button class="close5 closeBtn"
+            onclick="closeModalWindow('task-5', 'img5', 'close5', 'solution5')">Close</button>
+    </div>
+    <div class="task-6">
+        <div class="flex margin"><img class="img6" src="assets/task6.png" alt=""></div>
+        <span class="solution solution6" data-binding="taskSolution_6"></span>
+        <button class="close6 closeBtn"
+            onclick="closeModalWindow('task-6', 'img6', 'close6', 'solution6')">Close</button>
+    </div>
+</body>
+
+</html>
